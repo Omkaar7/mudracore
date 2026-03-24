@@ -14,7 +14,7 @@ app.add_middleware(
 
 pcs = set()
 
-@app.post("/offer")
+@app.post("/infer_frame")
 async def offer(offer: dict):
     pc = RTCPeerConnection()
     pcs.add(pc)
