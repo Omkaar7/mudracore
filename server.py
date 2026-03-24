@@ -61,7 +61,7 @@ def startup_event():
 
     # Load YOLO model
     logger.info("📦 Loading YOLO model...")
-    model = YOLO("phase1.pt")
+    model = YOLO("best.pt")
     model.to(device)
 
     # Warm-up (important for GPU)
